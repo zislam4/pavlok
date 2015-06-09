@@ -6,14 +6,15 @@ var main = function() {
 		request.onreadystatechange = display;
 		request.send();
 	});
-}
 
-function display() {
+	function display() {
 	
-	if (request.readystate == 4 && request.status == 200) {
-		console.log(request.responseText);
+		if (request.readystate == 4 && request.status == 200) {
+			console.log(request.responseText);
 
-	}
+		}
+	}	
+
 }
 
 $(document).ready(main);
