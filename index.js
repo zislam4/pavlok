@@ -5,7 +5,7 @@ var main = function() {
 
 	$('.btn').click(function () {
 		console.log("You clicked on the button!");
-		request.open('GET', 'pavlok-cal.herokuapp.com', true);
+		request.open('GET', 'pavlok-cal.herokuapp.com/addCal', true);
 		request.onreadystatechange = function display() {
 			console.log(request.readyState);
 			if (request.readyState == 4) {
