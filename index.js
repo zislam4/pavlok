@@ -13,7 +13,8 @@ var main = function() {
 	function display() {
 	
 		if (request.readystate == 4 && request.status == 200) {
-			console.log(request.responseText);
+			console.log("Request was successful");
+			console.log(request.response);
 
 		}
 	}	
