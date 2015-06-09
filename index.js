@@ -11,7 +11,7 @@ var main = function() {
 	});
 
 	function display() {
-	
+		console.log("In callback function");
 		if (request.readystate == 4 && request.status == 200) {
 			console.log("Request was successful");
 			console.log(request.response);
