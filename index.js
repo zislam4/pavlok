@@ -6,6 +6,7 @@ var main = function() {
 	$('.btn').click(function () {
 		console.log("You clicked on the button!");
 		request.open('GET', 'pavlok-cal.herokuapp.com/addCal', true);
+		request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 		request.onreadystatechange = function display() {
 			console.log(request.readyState);
 			if (request.readyState == 4) {
