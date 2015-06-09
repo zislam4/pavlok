@@ -1,7 +1,10 @@
 var main = function() {
+
+
+	var request = new XMLHttpRequest();
+
 	$('.btn').click(function () {
 		console.log("You clicked on the button!");
-		var request = new XMLHttpRequest();
 		request.open('GET', 'pavlok-cal.herokuapp.com', true);
 		request.onreadystatechange = display;
 		request.send();
