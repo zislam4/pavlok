@@ -3,7 +3,7 @@ var main = function() {
 		console.log("You clicked on the button!");
 		var request = new XMLHttpRequest();
 		request.open('GET', 'pavlok-cal.herokuapp.com', true);
-		request.onreadystatechange(display);
+		request.onreadystatechange = display;
 		request.send();
 	});
 }
