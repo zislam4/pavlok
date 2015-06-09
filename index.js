@@ -8,7 +8,7 @@ var main = function() {
 	});
 }
 
-var display = function() {
+function display() {
 	
 	if (request.readystate == 4 && request.status == 200) {
 		console.log(request.responseText);
