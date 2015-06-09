@@ -5,7 +5,7 @@ var main = function() {
 
 	$('.btn').click(function () {
 		console.log("You clicked on the button!");
-		request.open('GET', 'https://pavlok-cal.herokuapp.com/', true);
+		request.open('GET', 'https://pavlok-cal.herokuapp.com/addCal', true);
 		request.setRequestHeader("Access-Control-Allow-Origin", "Content-type", "application/x-www-form-urlencoded");
 		request.onreadystatechange = function display() {
 			console.log(request.readyState);
