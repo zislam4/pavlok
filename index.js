@@ -6,6 +6,7 @@ var main = function() {
 		var key = $('#key').val();
 		console.log("You clicked on the button! Your API key is" + key);
 		request.open('GET', 'https://pavlok-cal.herokuapp.com/addCal?key=' + key, true);
+		request.setRequestHeader("Access-Control-Allow-Origin");
 		request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 		request.onreadystatechange = function display() {
 			console.log(request.readyState);
