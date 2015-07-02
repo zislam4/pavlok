@@ -1,2 +1,2 @@
 # pavlok
-Pavlok integration front-end
+Barebones front-end for Pavlok integration
